@@ -2,11 +2,6 @@ html {
     font-size: 10px;
 }
 
-img {
-    height: 100px;
-    width: 100px;
-}
-
 #game-area {
     font-size: 1.6rem;
     padding-top: 3rem;
@@ -52,4 +47,45 @@ button {
 
 button:nth-child(2) {
     border: 2px solid rgb(255, 0, 0);
+}
+
+.stats {
+    background-color: whitesmoke;
+    border: 2px solid blue;
+    border-radius: 3rem 3rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.space-y {
+    margin: 3rem 0;
+}
+
+img {
+    width: 100%;
+    height: 90%;
+    border-radius: 3rem;
+}
+
+@media all and (min-width: 600px) {
+    #game-area {
+        display: flex;
+    }
+    .imageArea, .stats {
+        min-height: 50vh;
+    }
+    .imageArea {
+        border-radius: 3rem;
+        transform: translate(-3rem);
+        flex: 2;
+    }
+    .stats {
+        flex: 1;
+        border-radius: 3rem 0 0 3rem;
+        margin-left: 3rem;
+        padding-right: 3rem;
+    }
 }
